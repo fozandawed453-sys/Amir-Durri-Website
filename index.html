@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amir Durri | Car Import & Export</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Login & Sign Up Entrance -->
+    <div class="auth-container" id="authContainer">
+        <div class="auth-box">
+            <h2>Welcome to Amir Durri Import & Export Cars</h2>
+            <p>Login or Sign Up to Enter the Website</p>
+
+            <div class="form-toggle">
+                <button id="loginBtn" class="active">Login</button>
+                <button id="signupBtn">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="auth-submit">Login</button>
+            </form>
+
+            <!-- Sign Up Form -->
+            <form id="signupForm" style="display:none;">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Create Password" required>
+                <button type="submit" class="auth-submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Website -->
+    <div id="mainWebsite" style="display:none;">
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Amir Durri</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#business">Business</a></li>
+                <li><a href="#models">Car Models</a></li>
+                <li><a href="#profit">Profit Types</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Amir Durri</h1>
+            <p>Professional Car Import & Export Business</p>
+            <h3>Based in Harar, Ethiopia</h3>
+            <a href="#contact" class="btn">Contact Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-title">
+            <h2>About Me</h2>
+        </div>
+
+        <div class="about-container">
+            <div class="about-image">
+                <img src="amir-background.jpg" alt="Amir Durri">
+            </div>
+
+            <div class="about-text">
+                <h3>Welcome to My Business Website</h3>
+                <p>
+                    My name is Amir Durri. I am a professional entrepreneur specializing in
+                    importing and exporting high-quality vehicles. My business focuses on
+                    delivering reliable cars with excellent profit opportunities for customers
+                    and business partners.
+                </p>
+
+                <p>
+                    We provide trusted services from Harar, Ethiopia and work with modern car
+                    models from international markets.
+                </p>
+
+                <div class="skills">
+                    <span>Car Import</span>
+                    <span>Car Export</span>
+                    <span>Business Management</span>
+                    <span>International Trade</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Section -->
+    <section class="business" id="business">
+        <div class="section-title">
+            <h2>My Business</h2>
+        </div>
+
+        <div class="business-container">
+            <div class="business-card">
+                <i class="fas fa-car"></i>
+                <h3>Vehicle Import</h3>
+                <p>
+                    Importing modern and luxury vehicles from international markets.
+                </p>
+            </div>
+
+            <div class="business-card">
+                <i class="fas fa-globe"></i>
+                <h3>Vehicle Export</h3>
+                <p>
+                    Exporting quality cars to different countries with trusted service.
+                </p>
+            </div>
+
+            <div class="business-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Business Growth</h3>
+                <p>
+                    Helping customers and investors achieve profitable opportunities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Models -->
+    <section class="models" id="models">
+        <div class="section-title">
+            <h2>Popular Car Models</h2>
+        </div>
+
+        <div class="car-container">
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop" alt="Toyota Land Cruiser">
+                <div class="car-info">
+                    <h3>Toyota Land Cruiser</h3>
+                    <p>Luxury SUV with powerful performance and durability.</p>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop" alt="Mercedes Benz">
+                <div class="car-info">
+                    <h3>Mercedes Benz</h3>
+                    <p>Premium comfort and advanced technology vehicle.</p>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop" alt="BMW X5">
+                <div class="car-info">
+                    <h3>BMW X5</h3>
+                    <p>Elegant SUV with strong engine performance.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Profit Types -->
+    <section class="profit" id="profit">
+        <div class="section-title">
+            <h2>Profit Types</h2>
+        </div>
+
+        <div class="profit-container">
+            <div class="profit-box">
+                <h3>Retail Sales</h3>
+                <p>Profit from direct vehicle sales to customers.</p>
+            </div>
+
+            <div class="profit-box">
+                <h3>International Export</h3>
+                <p>Income generated through global trade partnerships.</p>
+            </div>
+
+            <div class="profit-box">
+                <h3>Luxury Vehicle Market</h3>
+                <p>High-return investments in premium vehicle segments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Harar, Ethiopia</p>
+                <p><i class="fas fa-envelope"></i> amir@durribusiness.com</p>
+                <p><i class="fas fa-phone"></i> +251 905493528</p>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Amir Durri. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: #0f172a;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* Login & Signup Section */
+.auth-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url('amir-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.auth-box {
+    background: rgba(15, 23, 42, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+.auth-box h2 {
+    color: #facc15;
+    margin-bottom: 10px;
+}
+
+.auth-box p {
+    margin-bottom: 25px;
+    color: #ddd;
+}
+
+.form-toggle {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form-toggle button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    background: #1e293b;
+    color: white;
+    font-weight: bold;
+}
+
+.form-toggle .active {
+    background: #facc15;
+    color: black;
+}
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-box input {
+    margin: 10px 0;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.auth-submit {
+    margin-top: 15px;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: #facc15;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-submit:hover {
+    background: white;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #facc15;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #facc15;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('amir-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 70px;
+    color: #facc15;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.hero-content h3 {
+    margin-top: 15px;
+    color: #ddd;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 35px;
+    background: #facc15;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+section {
+    padding: 100px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 42px;
+    color: #facc15;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-text h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.skills span {
+    display: inline-block;
+    background: #1e293b;
+    padding: 10px 18px;
+    margin: 8px;
+    border-radius: 20px;
+}
+
+.business-container,
+.car-container,
+.profit-container,
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.business-card,
+.profit-box,
+.contact-box {
+    background: #1e293b;
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.business-card:hover,
+.profit-box:hover,
+.contact-box:hover {
+    transform: translateY(-10px);
+}
+
+.business-card i,
+.contact-box i {
+    font-size: 45px;
+    color: #facc15;
+    margin-bottom: 20px;
+}
+
+.car-card {
+    background: #1e293b;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.car-card:hover {
+    transform: scale(1.03);
+}
+
+.car-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 20px;
+}
+
+.car-info h3 {
+    color: #facc15;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: black;
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
+
+@media(max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+}
