@@ -7,7 +7,7 @@
 
 body {
     overflow-x: hidden;
-    background: #0f172a;
+    background: #0a0a0a;
     color: white;
     scroll-behavior: smooth;
 }
@@ -108,11 +108,12 @@ header {
     align-items: center;
     padding: 20px 8%;
 }
-
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #facc15;
+ .logo {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #d4af37;
+    text-transform: uppercase;
 }
 
 .nav-links {
@@ -147,8 +148,10 @@ header {
 }
 
 .hero-content h1 {
-    font-size: 70px;
-    color: #facc15;
+    font-size: 75px;
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .hero-content p {
@@ -233,7 +236,7 @@ section {
 .business-card,
 .profit-box,
 .contact-box {
-    background: #1e293b;
+    background: #171717;
     padding: 35px;
     border-radius: 20px;
     text-align: center;
@@ -244,6 +247,8 @@ section {
 .profit-box:hover,
 .contact-box:hover {
     transform: translateY(-10px);
+    border: 1px solid #d4af37;
+    box-shadow: 0 0 25px rgba(212,175,55,0.3);
 }
 
 .business-card i,
@@ -254,7 +259,7 @@ section {
 }
 
 .car-card {
-    background: #1e293b;
+    background: #171717;
     border-radius: 20px;
     overflow: hidden;
     transition: 0.4s;
@@ -305,4 +310,36 @@ footer {
     .hero-content p {
         font-size: 18px;
     }
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    z-index: 9999;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+}
+
+.social-links a {
+    color: #d4af37;
+    margin: 0 10px;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: white;
+}
 }
